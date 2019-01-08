@@ -1,0 +1,50 @@
+<div id="auth-show" class="sideDisp">
+			<div style="border-bottom:dashed; padding-bottom:20px; border-width:1px;">
+				<table>
+					<tr>
+						<td class="authform">EmailId: </td>
+						<td class="authform"><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="authform">Password: </td>
+						<td class="authform"><input type="text"></td>
+					</tr>
+					<tr>
+						<br>
+					</tr>
+					<tr><br>
+						<td><br></td><td><div class="button">Sign In</div></td>
+					</tr>
+
+					<tr>
+						<td class="authform"> Forgot password ?</td>
+						<td><a href="#!" style="color: #4c9051;text-shadow: 0 0 5px #4c9051;text-decoration:none;"> <b> click here </b></a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<table>
+					<tr>
+						<td class="authform">EmailId: </td>
+						<td class="authform"><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="authform">Password: </td>
+						<td class="authform"><input type="password"></td>
+					</tr>
+					<tr>
+						<td class="authform">Confirm Password: </td>
+						<td class="authform"><input type="text"></td>
+					</tr>
+					<tr>
+						<br>
+					</tr>
+					<tr><br>
+						<td><br></td><td><div class="button">Sign Up</div></td>
+					</tr>
+
+					</table>
+				</div>
+
+				</div>

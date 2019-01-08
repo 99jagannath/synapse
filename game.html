@@ -1,0 +1,473 @@
+<html>
+<head>
+	
+	<title>Ostella </title>
+	
+	<style type="text/css">
+	body{
+		background-color: #012e0b;
+		font-family:'courier new';
+		/*background-image: url('1.jpg') ;*/
+		background-size: cover;
+		background-position: center;
+
+	}
+::-webkit-scrollbar{
+	display: none;
+}
+	.mainBorder{
+		width: 92%;
+		height: 83%;
+		border-radius: 5px;
+		border-color: #4c9051;
+		border-style: solid;
+		border-width: 1px;
+		margin: 2%;
+		padding: 2%;
+		color: #4c9051;
+		box-shadow: 0 0 10px #4c9051;
+	}
+
+	.circle_300_300{
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		border-width: 1px;
+		border-style: dashed;
+		border-color: #4c9051;
+		background-color: #012e0b;
+		opacity: 0;
+		/*box-shadow: 0 0 6px #4c9051;*/
+	}
+
+	.circle_250_250{
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		border-width: 8px;
+		/*border: 10px dashed #4c9051;*/
+		border-style: dashed;
+		border-color: #4c9051;	
+		background-color: #012e0b;	
+		opacity: 0;
+		/*box-shadow: 0 0 6px #4c9051;*/
+		
+	}
+
+	.circle_200_200{
+		width: 200px;
+		height: 200px;
+		background-color: #012e0b;
+		border-radius: 50%;
+		border-width: 1px;
+		border-style: dashed;
+		border-color: #4c9051;	
+		opacity: 0;	
+		/*box-shadow: 0 0 6px #4c9051;*/
+		
+	}
+
+	.circle_150_150{
+		width: 150px;
+		height: 150px;
+		background-color: #012e0b;
+		border-radius: 50%;
+		border-width: 4px;
+		border-style: dashed;
+		border-color: #4c9051;	
+		opacity: 0;	
+		/*box-shadow: 0 0 6px #4c9051;*/
+		
+	}
+
+	.circle_100_100{
+		width: 100px;
+		height: 100px;
+		background-color: #012e0b;
+		border-radius: 50%;
+		border-width: 1px;
+		border-style: dashed;
+		border-color: #4c9051;	
+		opacity: 0;	
+		/*box-shadow: 0 0 6px #4c9051;*/
+		
+	}
+
+	.circle_40_40{
+		width: 40px;
+		height: 40px;
+		background-color: #4c9051;
+		border-radius: 50%;
+		border-width: 1px;
+		border-style: dashed;
+		border-color: #4c9051;		
+		box-shadow: 0 0 15px #4c9051;
+		opacity: 0;
+	}
+
+	.center{
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0%;
+		right: 25%;
+		margin: auto;
+	}
+
+	.rotateLinear{
+	-webkit-animation-name: rotateA; 
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 4s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;	
+	}
+
+	.rotateEaseIn{
+	-webkit-animation-name: rotate; 
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 4s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in;	
+	}
+
+	.rotateEaseOut{
+		
+	-webkit-animation-name: rotate; 
+    -webkit-animation-duration: 10s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 10s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;	
+	}
+
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+
+@-webkit-keyframes rotateA {
+    from {-webkit-transform: rotate(360deg);}
+    to {-webkit-transform: rotate(0deg);}
+}
+
+@-moz-keyframes rotateA {
+    from {-moz-transform: rotate(360deg);}
+    to {-moz-transform: rotate(0deg);}
+}
+.title{
+	color:#4c9051;
+	font-size: 50px;
+	margin-top: 1%;
+	text-align: center;
+	text-shadow: 0 0 15px #4c9051;
+	position: absolute;
+	top:5%;
+	left:0;
+	right: 35%;
+}
+fieldset{
+	border-color: #4c9051;
+	box-shadow: 0 0 5px #4c9051;
+	color:#4c9051;
+	font-size: 20px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+legend{
+	box-shadow: 0 0 5px #4c9051;
+	text-shadow: 0 0 5px #4c9051;
+	border-radius: 25px;
+	border-style: solid;
+	border-width: 2px;
+	padding: 3px 20px 3px;
+	color: #4c9051;
+	background-color: #012e0b; 
+}
+.auth{
+	width: 22%;
+	float: right;
+	position: absolute;
+	top:18%;
+	right: 16%;
+	color: #4c9051;
+	background-color: #012e0b;
+}
+
+.authform {
+	color: #4c9051;
+	width: 50%;
+}
+
+.authform_forgot {
+	color: #4c9051;
+	text-shadow: 0 0 5px #4c9051;
+}
+
+
+input{
+	background-color: #4c9051;
+	color: white;
+	border: none;
+	height: 30px;
+	padding:10px;
+	border-radius: 10px;
+}
+
+input:focus{
+	outline: none;
+	font-family:'courier new';
+}
+
+.button{
+	width: 50%;
+	color:#4c9051;
+	border-radius: 25px;
+	box-shadow: 0 0 5px #4c9051;
+	padding:5px;
+	text-align: center;
+	float: right;
+}
+
+.menu{
+	position: absolute;
+	top: 12%;
+	left: 0%
+	transform-origin: left;
+	transform: translate(-25px,0);
+}
+
+.sidebar{
+	color:#4c9051;
+	width: 180px;
+	font-size: 20px;
+	border-radius: 0 25px 0;
+	box-shadow: 0 0 5px #4c9051;
+	padding:15px 15px 15px 35px;
+	margin-top: 10%;
+	text-align: center;
+	background-color: #012e0b;
+	transition: all .2s ease-in-out;
+	opacity: 0;
+}
+
+.sidebar:hover{
+	background-color: #4c9051;
+	color:#012e0b;
+    -moz-box-shadow: inset 0 0 10px #012e0b;
+	-webkit-box-shadow: inset 0 0 10px #012e0b;
+	box-shadow: inset 0 0 10px #012e0b;
+    cursor: hand;
+
+}
+
+.sideDisp{
+	text-align: justify;
+}
+
+#home-show{
+	font-size: 13px;
+}
+
+.square{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 35%;
+	bottom: 0;
+	margin: auto;
+	background-color:#4c9051;
+}
+
+.squarebox{
+	width: 33.33333%;
+	height: 13.3333%;
+	font-size: 60px;
+	text-align: center;
+	padding: 40px 0;
+	color: #012e0b;
+	-moz-box-shadow: inset 0 0 10px #012e0b;
+	-webkit-box-shadow: inset 0 0 10px #012e0b;
+	box-shadow: inset 0 0 10px #012e0b;
+}
+
+.col_1{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.col_2{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 33.333333%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.col_3{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 66.66666%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+</style>
+
+<script src="js/particles.js"></script>
+
+</head>
+<body>
+	<div id="particles-js"></div>
+	<div class="soundCont"></div>
+    <div class="soundCont1"></div>
+	<div class="">
+		<div class="title">[ Alphabets ]</div>
+			<div class="square">
+				<b>
+					<div class="col_1">
+						<div class="squarebox" id="1_sq">1</div>
+						<div class="squarebox" id="4_sq">4</div>
+						<div class="squarebox" id="7_sq">7</div>
+					</div>
+
+					<div class="col_2">
+						<div class="squarebox" id="2_sq">2</div>
+						<div class="squarebox" id="5_sq">5</div>
+						<div class="squarebox" id="8_sq">8</div>
+					</div>
+
+					<div class="col_3">
+						<div class="squarebox" id="3_sq">3</div>
+						<div class="squarebox" id="6_sq">6</div>
+						<div class="squarebox" id="9_sq">9</div>
+					</div>
+				</b>
+			</div>
+	</div>
+
+	<div class="auth">
+		<fieldset id="display-board">
+			<legend id="display-tit">
+				Score Card
+			</legend>
+
+			Letters:<span class="Lcount"> </span><br>
+			correct:<b><span class="score"> </span></b><br>
+
+		</fieldset>
+	</div>
+
+			
+	</div>
+
+<script src="js/app.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/transit.min.js"></script>
+
+</body>
+</html>
+<script type="text/javascript">
+	
+
+    $(document).ready(function(){
+
+    	$('.squarebox').html('');
+
+    		function generateLetter() {
+			  var text = "";
+			  var possible = "qwertuiopasdfghjklzxcvbnm";
+
+			  for (var i = 0; i < 1; i++)
+			    text += possible.charAt(Math.floor(Math.random() * possible.length));
+			  return text;
+			}
+
+			function generateNumber() {
+				var text = "";
+			    var possible = "123456789";
+
+			    for (var i = 0; i < 1; i++)
+			    	text += possible.charAt(Math.floor(Math.random() * possible.length));
+			  	return text;
+			}
+
+			function talkBack(message){
+				var voices = window.speechSynthesis.getVoices();
+				var msg = new SpeechSynthesisUtterance();
+				msg.voice = voices[10];
+				msg.voiceURI = 'native';
+				msg.volume = 1; // 0 to 1
+				msg.rate = .8; // 0.1 to 10
+				msg.pitch = 1; //0 to 2
+				msg.text = message;
+				msg.lang = 'en-US';	
+				speechSynthesis.speak(msg);
+			}
+
+			var num = '';
+    		var letter = '';
+    		var score = 0;
+    		var Lcount = 0;
+
+    		setInterval(function(){
+    			var i=0;
+    			num = generateNumber();
+    			letter = generateLetter();
+    			talkBack(letter);
+    			for(i=1;i<=9;i++){
+
+    				if(i!=num){
+    					$('#'+i+'_sq').html('');	
+    				}
+    			}
+    			$('#'+num+'_sq').html(letter);
+    			Lcount++;
+
+			 	$('.Lcount').html(Lcount);
+    		},2000);
+
+    		$( document ).keypress(function(e) {
+
+			 	var ch = String.fromCharCode(e.charCode);
+
+			 	if(ch == letter){
+			 		
+			 		score++;
+			 		
+			 	}
+
+			 	$('.score').html(score);
+
+    		});
+    	
+
+
+    });
+</script>
